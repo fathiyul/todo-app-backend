@@ -60,12 +60,7 @@ Note: The `.env` file contains sensitive information and should never be committ
    pip install -r requirements.txt
    ```
 
-4. Set up your MySQL database and update the connection string in `app/database.py`:
-   ```python
-   SQLALCHEMY_DATABASE_URL = "mysql://username:password@localhost/todo_db"
-   ```
-
-5. Run the application:
+4. Run the application:
    ```
    uvicorn app.main:app --reload
    ```
